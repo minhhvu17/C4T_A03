@@ -1,7 +1,3 @@
-#gh
-# NOTE: change a key to other key
-# person['sex']= person.pop.('gender')
-
 nums = [1,3,4,16,32,8,64,4,128,2,256,31]
 print (nums)
 i = len(nums)

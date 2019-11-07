@@ -10,6 +10,7 @@ for m in range(i):
                 if nums[m] != nums[n]:
                     if nums[m] != nums2[m]:
                         h= h+1
+                        del(nums2[m])
                     print('So', nums[m],'va', nums[n], 'o vi tri',m+h+1, 'va',n+h+1)
                     del(nums[m])   
         except IndexError:

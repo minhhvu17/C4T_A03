@@ -10,9 +10,17 @@ for m in range(i):
                 if nums[m] != nums[n]:
                     if nums[m] != nums2[m]:
                         h= h+1
-                        del(nums2[m])
                     print('So', nums[m],'va', nums[n], 'o vi tri',m+h+1, 'va',n+h+1)
-                    del(nums[m])   
+                    del(nums[m]) 
         except IndexError:
             i=i-1
             continue
+
+dictionary = {}
+for index, item in enumerate(nums):
+    number = item
+    nums[index] = 0
+    for index1, item1 in enumerate(nums):
+        if number * item1 ==256:
+            nums[index1] = 0
+            
